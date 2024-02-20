@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ifxj
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0075-tenant/tkrw-pr714-0075-0075-app/devfile-sample-ifxj@sha256:e6ffd17fe526643c8fd65329e40392fb6c778ad205cc28f1be7784a132b7cc18
+        name: my-nodejs
+        resources: {}
+status: {}
